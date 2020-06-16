@@ -16,16 +16,8 @@ main {
     text-align: center;
 }
 
+
 /* Layout Styles */
-
-body {
-    margin: auto;
-}
-
-.main-wrap {
-    width: 100%;
-    margin: 20px;
-}
 
 .main-header {
     text-align: center;
@@ -47,10 +39,15 @@ body {
     padding: 0 10px;
 }
 
+.container {
+    margin: 10px 30px;
+}
+
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
+
 
 /* Media Queries */
