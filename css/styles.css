@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+
+.main-header {
+    font-family: 'Sriracha', cursive;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-footer {
+    text-align: center;
+}
+
+/* Layout Styles */
+
+body {
+    margin: auto;
+}
+
+.main-wrap {
+    width: 400px;
+    margin: auto;
+}
+
+.main-header {
+    text-align: center;
+    display: flex;
+    flex-flow: wrap column;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.nav {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    display: flex;
+}
+
+.nav li {
+    padding: 0 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Media Queries */
