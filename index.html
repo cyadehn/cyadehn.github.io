@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sriracha&family=Rubik:wght@900w&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/31247d7b88.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header id="top" class="main-header">
         <h1 class="name">Christopher Dehner</h1>
-        <nav>
-            <ol class="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="https://cyadehn.github.io/games/">Games</a></li>
-                <li><a href="">Other</a></li>
-            </ol>
+        <nav class="topnav" id="topnav">
+            <a href="javascript:void(0)" class="icon" onClick="responsiveNav()">
+                <!-- <img src="img/menu.png" style="width: 35px"> -->
+                <i class="fas fa-hamburger"></i>
+            </a>
+            <a href="" class="active">Home</a>
+            <a href="">About</a>
+            <a href="https://cyadehn.github.io/games/">Games</a>
+            <a href="">Other</a>
         </nav>
     </header>
     <main class="main-wrap">
+        <div class="banner">
+            <img src="./img/FALL (2 of 9) copy.jpg" class="image">
+        </div>
         <div class="container">
             <p>There's not a thing in the world wrong with washing your brush. This is probably the greatest thing to happen in my life - to be able to share this with you. A little happy sunlight shining through there. Let all these things just sort of happen. You have to allow the paint to break to make it beautiful.</p>
             <p>Now then, let's play. God gave you this gift of imagination. Use it. In nature, dead trees are just as normal as live trees.</p>
@@ -34,6 +40,17 @@
     </main>
     <footer class="main-footer">
         <a href="#top">Return to top</a>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
+    <script>
+        function responsiveNav() {
+            let x = document.getElementById("topnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>
