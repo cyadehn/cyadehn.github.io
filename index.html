@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sriracha&family=Rubik:wght@900w&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sriracha&family=Rubik:wght@900w&display=swap" rel="text">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/31247d7b88.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <header id="top" class="main-header">
-        <h1 class="name">Christopher Dehner</h1>
+    <header id="top" class="main-header"> <!-- Main Header -->
+        
+        <!-- Header Logo -->
+        <img class="logo" src="img/CYADEHN Logo.png">
+        
+        <!-- Navigation -->
         <nav class="topnav" id="topnav">
-            <a href="javascript:void(0)" class="icon" onClick="responsiveNav()">
-                <!-- <img src="img/menu.png" style="width: 35px"> -->
-                <i class="fas fa-hamburger"></i>
-            </a>
-            <a href="" class="active">Home</a>
-            <a href="">About</a>
+            <a class="hamburger" id="hamburger"><img src="img/CYADEHN Hamburger.png"></a>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html" class=>About</a>
             <a href="https://cyadehn.github.io/games/">Games</a>
             <a href="">Other</a>
-        </nav>
+        
+        </nav> <!-- END Main Header -->
+    
     </header>
     <main class="main-wrap">
         <div class="banner">
@@ -42,7 +45,7 @@
         <a href="#top">Return to top</a>
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
-    <script>
+    <script> //Need a check for whether javascript is available for accessibility
         function responsiveNav() {
             let x = document.getElementById("topnav");
             if (x.className === "topnav") {
