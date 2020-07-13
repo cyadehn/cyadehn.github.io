@@ -2,11 +2,20 @@
     box-sizing: border-box;
 }
 
+/* Variables */
+
+:root {
+    --main-blue: rgb(87, 98, 255);
+    --main-yellow: rgb(255, 210, 7);
+    --main-red: rgb(255, 74, 74);
+    --main-grey: rgb(54,54,54);
+}
+
 /* Base Styles */
 
 body {
     background-image: 
-        linear-gradient(rgba(0, 131, 201, .50), rgba(0,131,201,.50)), 
+        /* linear-gradient(rgba(0, 131, 201, .50), rgba(0,131,201,.50)),  */
         url("../img/repeated-square.png");
     height: 100%;
     width: 100%;
@@ -16,18 +25,22 @@ body {
 header {
     display: flex;
     flex-flow: no-wrap column;
-    background: rgb(255, 10, 104);
+    /* background: var(--main-blue); */
+    color: white;
 }
 
-.name,
+.name{
+    color: white;
+}
+
 .topnav a {
     text-decoration: none;
-    color: rgb(54,54,54);    
+    color: var(--main-grey);    
 }
 
 .topnav a {
-    float: left;
-    display: block;
+    /* float: left; */
+    /* display: block; */
     padding: 0 10px;
     text-align: center;
     padding: 9px 16px;
@@ -35,12 +48,12 @@ header {
 }
 
 .topnav a:hover {
-    background-color: rgb(150, 89, 255);
+    background: var(--main-red);
     color: white;
 }
 
 .topnav a.active {
-    background-color: rgb(150, 89, 255);
+    background-color: var(--main-red);
     color: white;
     font-weight: bold;
 }
@@ -61,7 +74,7 @@ nav a:not(:first-child) {
 .topnav {
     font-family: 'Roboto', sans-serif;
     list-style-type: none;
-    background-color: rgb(255, 221, 99);
+    /* background: var(--main-yellow); */
 }
 
 nav ol {
@@ -94,7 +107,17 @@ main {
     padding: 10px;
     width: 90%;
     height: auto;
-    background: rgb(255, 10, 104);
+    /* background: var(--main-blue); */
+}
+
+header .logo {
+    max-width: 350px;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.hamburger img {
+    width: 20px;
 }
 
 /* Layout Styles */
@@ -120,7 +143,7 @@ main {
 
 /* Media Queries */
 
-@media (max-width: 556px) {
+/* @media (max-width: 556px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
         float: right;
@@ -138,7 +161,7 @@ main {
         display: block;
         text-align: left;
     }
-}
+} */
 
 @media (min-width: 719px) {
     header {
